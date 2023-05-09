@@ -1,0 +1,35 @@
+.padding(@i) when(@i <=40) {
+    .p-@{i} {
+        padding: @i + 0px;
+    }
+
+    .pt-@{i} {
+        padding-top: @i + 0px;
+    }
+
+    .pr-@{i} {
+        padding-right: @i + 0px;
+    }
+
+    .pb-@{i} {
+        padding-bottom: @i + 0px;
+    }
+
+    .pl-@{i} {
+        padding-left: @i + 0px;
+    }
+
+    .px-@{i} {
+        padding-left : @i + 0px;
+        padding-right: @i + 0px;
+    }
+
+    .py-@{i} {
+        padding-top   : @i + 0px;
+        padding-bottom: @i + 0px;
+    }
+
+    .padding((@i + 2));
+}
+
+.padding(0);

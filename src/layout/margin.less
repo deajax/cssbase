@@ -1,0 +1,66 @@
+.margin(@i) when(@i <=40) {
+    .m-@{i} {
+        margin: @i + 0px;
+    }
+
+    .mt-@{i} {
+        margin-top: @i + 0px;
+    }
+
+    .mr-@{i} {
+        margin-right: @i + 0px;
+    }
+
+    .mb-@{i} {
+        margin-bottom: @i + 0px;
+    }
+
+    .ml-@{i} {
+        margin-left: @i + 0px;
+    }
+
+    .mx-@{i} {
+        margin-left : @i + 0px;
+        margin-right: @i + 0px;
+    }
+
+    .my-@{i} {
+        margin-top   : @i + 0px;
+        margin-bottom: @i + 0px;
+    }
+
+    .margin((@i + 2));
+}
+
+.margin(0);
+
+
+.m-a {
+    margin: auto;
+}
+
+.mt-a {
+    margin-top: auto;
+}
+
+.mr-a {
+    margin-right: auto;
+}
+
+.mb-a {
+    margin-bottom: autox;
+}
+
+.ml-a {
+    margin-left: auto;
+}
+
+.mx-a {
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.my-a {
+    margin-top   : auto;
+    margin-bottom: auto;
+}

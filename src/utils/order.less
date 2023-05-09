@@ -1,0 +1,21 @@
+.order(@i) when(@i <=12) {
+    .order-@{i} {
+        order: @i + 0;
+    }
+
+    .order((@i + 1));
+}
+
+.order(1);
+
+.order-first {
+    order: -9999;
+}
+
+.order-last {
+    order: 9999;
+}
+
+.order-none {
+    order: 0;
+}

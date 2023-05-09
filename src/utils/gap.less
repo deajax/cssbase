@@ -1,0 +1,13 @@
+.gap(@i) when(@i <=40) {
+    .gap-row-@{i} {
+        row-gap: @i + 0px;
+    }
+
+    .gap-col-@{i} {
+        column-gap: @i + 0px;
+    }
+
+    .gap((@i + 2));
+}
+
+.gap(0);
