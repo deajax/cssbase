@@ -141,12 +141,12 @@
 @component-border: var(--td-component-border, @gray-color-4);
 
 // 主题
-@brand-color             : var(--td-brand-color, @primary-color-7);
-@brand-color-active      : var(--td-brand-color-active, @primary-color-8);
-@brand-color-disabled    : var(--td-brand-color-disabled, @primary-color-3);
-@brand-color-focus       : var(--td-brand-color-focus, @primary-color-1);
-@brand-color-light       : var(--td-brand-color-light, @primary-color-1);
-@brand-color-light-active: var(--td-brand-color-light-active, @primary-color-2);
+@primary-color             : var(--td-primary-color, @primary-color-7);
+@primary-color-active      : var(--td-primary-color-active, @primary-color-8);
+@primary-color-disabled    : var(--td-primary-color-disabled, @primary-color-3);
+@primary-color-focus       : var(--td-primary-color-focus, @primary-color-1);
+@primary-color-light       : var(--td-primary-color-light, @primary-color-1);
+@primary-color-light-active: var(--td-primary-color-light-active, @primary-color-2);
 
 @error-color         : var(--td-error-color, @error-color-6);
 @error-color-active  : var(--td-error-color-active, @error-color-7);
@@ -172,8 +172,8 @@
 @text-color-placeholder: var(--td-text-color-placeholder, @font-gray-3);
 @text-color-disabled   : var(--td-text-color-disabled, @font-gray-4);
 @text-color-anti       : var(--td-text-color-anti, @font-white-1);
-@text-color-brand      : var(--td-text-color-brand, @brand-color);
-@text-color-link       : var(--td-text-color-link, @brand-color);
+@text-color-brand      : var(--td-text-color-brand, @primary-color);
+@text-color-link       : var(--td-text-color-link, @primary-color);
 
 // 定位
 @position-fixed-top: var(--td-position-fixed-top, 0);
@@ -328,12 +328,12 @@ page {
 
 page {
     // 主题
-    --brand-color             : var(--td-brand-color, var(--primary-color-7));
-    --brand-color-active      : var(--td-brand-color-active, var(--primary-color-8));
-    --brand-color-disabled    : var(--td-brand-color-disabled, var(--primary-color-3));
-    --brand-color-focus       : var(--td-brand-color-focus, var(--primary-color-1));
-    --brand-color-light       : var(--td-brand-color-light, var(--primary-color-1));
-    --brand-color-light-active: var(--td-brand-color-light-active, var(--primary-color-2));
+    --primary-color             : var(--td-primary-color, var(--primary-color-7));
+    --primary-color-active      : var(--td-primary-color-active, var(--primary-color-8));
+    --primary-color-disabled    : var(--td-primary-color-disabled, var(--primary-color-3));
+    --primary-color-focus       : var(--td-primary-color-focus, var(--primary-color-1));
+    --primary-color-light       : var(--td-primary-color-light, var(--primary-color-1));
+    --primary-color-light-active: var(--td-primary-color-light-active, var(--primary-color-2));
 
     --error-color         : var(--td-error-color, var(--error-color-6));
     --error-color-active  : var(--td-error-color-active, var(--error-color-7));
@@ -359,8 +359,8 @@ page {
     --text-color-placeholder: var(--td-text-color-placeholder, var(--font-gray-3));
     --text-color-disabled   : var(--td-text-color-disabled, var(--font-gray-4));
     --text-color-anti       : var(--td-text-color-anti, var(--font-white-1));
-    --text-color-brand      : var(--td-text-color-brand, var(--brand-color));
-    --text-color-link       : var(--td-text-color-link, var(--brand-color));
+    --text-color-brand      : var(--td-text-color-brand, var(--primary-color));
+    --text-color-link       : var(--td-text-color-link, var(--primary-color));
 
     --position-fixed-top: var(--td-position-fixed-top, 0);
 }
@@ -905,28 +905,28 @@ page {
 }
 
 // 主题
-.brand-color {
-    color: var(--td-brand-color, var(--primary-color-7));
+.primary-color {
+    color: var(--td-primary-color, var(--primary-color-7));
 }
 
-.brand-color-active {
-    color: var(--td-brand-color-active, var(--primary-color-8));
+.primary-color-active {
+    color: var(--td-primary-color-active, var(--primary-color-8));
 }
 
-.brand-color-disabled {
-    color: var(--td-brand-color-disabled, var(--primary-color-3));
+.primary-color-disabled {
+    color: var(--td-primary-color-disabled, var(--primary-color-3));
 }
 
-.brand-color-focus {
-    color: var(--td-brand-color-focus, var(--primary-color-1));
+.primary-color-focus {
+    color: var(--td-primary-color-focus, var(--primary-color-1));
 }
 
-.brand-color-light {
-    color: var(--td-brand-color-light, var(--primary-color-1));
+.primary-color-light {
+    color: var(--td-primary-color-light, var(--primary-color-1));
 }
 
-.brand-color-light-active {
-    color: var(--td-brand-color-light-active, var(--primary-color-2));
+.primary-color-light-active {
+    color: var(--td-primary-color-light-active, var(--primary-color-2));
 }
 
 .error-color {
@@ -990,28 +990,28 @@ page {
 }
 
 // 主题背景
-.brand-bg {
-    background-color: var(--td-brand-color, var(--primary-color-7));
+.primary-bg {
+    background-color: var(--td-primary-color, var(--primary-color-7));
 }
 
-.brand-bg-active {
-    background-color: var(--td-brand-color-active, var(--primary-color-8));
+.primary-bg-active {
+    background-color: var(--td-primary-color-active, var(--primary-color-8));
 }
 
-.brand-bg-disabled {
-    background-color: var(--td-brand-color-disabled, var(--primary-color-3));
+.primary-bg-disabled {
+    background-color: var(--td-primary-color-disabled, var(--primary-color-3));
 }
 
-.brand-bg-focus {
-    background-color: var(--td-brand-color-focus, var(--primary-color-1));
+.primary-bg-focus {
+    background-color: var(--td-primary-color-focus, var(--primary-color-1));
 }
 
-.brand-bg-light {
-    background-color: var(--td-brand-color-light, var(--primary-color-1));
+.primary-bg-light {
+    background-color: var(--td-primary-color-light, var(--primary-color-1));
 }
 
-.brand-bg-light-active {
-    background-color: var(--td-brand-color-light-active, var(--primary-color-2));
+.primary-bg-light-active {
+    background-color: var(--td-primary-color-light-active, var(--primary-color-2));
 }
 
 .error-bg {
@@ -1096,11 +1096,11 @@ page {
 }
 
 .text-color-brand {
-    color: var(--td-text-color-brand, var(--brand-color));
+    color: var(--td-text-color-brand, var(--primary-color));
 }
 
 .text-color-link {
-    color: var(--td-text-color-link, var(--brand-color));
+    color: var(--td-text-color-link, var(--primary-color));
 }
 
 .position-fixed-top {
