@@ -1,0 +1,90 @@
+@sizeMax : 80; //最大上限
+@sizeStep: 4; //渐变值
+
+.top-(@sizeMax);
+
+.top-(@n, @i: 0) when (@i =< @n) {
+    .top-@{i} {
+        top: 0rpx + @i  !important;
+    }
+
+    .top-(@n, (@i+@sizeStep));
+}
+
+.right-(@sizeMax);
+
+.right-(@n, @i: 0) when (@i =< @n) {
+    .right-@{i} {
+        right: 0rpx + @i  !important;
+    }
+
+    .right-(@n, (@i+@sizeStep));
+}
+
+.bottom-(@sizeMax);
+
+.bottom-(@n, @i: 0) when (@i =< @n) {
+    .bottom-@{i} {
+        bottom: 0rpx + @i  !important;
+    }
+
+    .bottom-(@n, (@i+@sizeStep));
+}
+
+.left-(@sizeMax);
+
+.left-(@n, @i: 0) when (@i =< @n) {
+    .left-@{i} {
+        left: 0rpx + @i  !important;
+    }
+
+    .left-(@n, (@i+@sizeStep));
+}
+
+.top-auto {
+    top: auto !important;
+}
+
+.right-auto {
+    right: auto !important;
+}
+
+.bottom-auto {
+    bottom: auto !important;
+}
+
+.left-auto {
+    left: auto !important;
+}
+
+.top-full {
+    top: 100% !important;
+}
+
+.right-full {
+    right: 100% !important;
+}
+
+.bottom-full {
+    bottom: 100% !important;
+}
+
+.left-full {
+    left: 100% !important;
+}
+
+.top-half {
+    top: 50% !important;
+}
+
+.right-half {
+    right: 50% !important;
+}
+
+.bottom-half {
+    bottom: 50% !important;
+}
+
+.left-half {
+    left: 50% !important;
+}

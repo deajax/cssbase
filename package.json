@@ -1,0 +1,19 @@
+{
+  "name": "cssbase",
+  "version": "1.0.0",
+  "description": "cssbase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deajax/cssbase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deajax/cssbase/issues"
+  },
+  "homepage": "https://github.com/deajax/cssbase#readme"
+}

@@ -1,0 +1,220 @@
+@marginMax : 80; //最大上限
+@marginStep: 4; //渐变值
+
+// margin 
+.m-(@marginMax);
+
+.m-(@n, @i: 0) when (@i =< @n) {
+    .m-@{i} {
+        margin: 0rpx + @i  !important;
+    }
+
+    .m-(@n, (@i+@marginStep));
+}
+
+// margin-left 
+.mt-(@marginMax);
+
+.mt-(@n, @i: 0) when (@i =< @n) {
+    .mt-@{i} {
+        margin-top: 0rpx + @i  !important;
+    }
+
+    .mt-(@n, (@i+@marginStep));
+}
+
+// margin-right
+.mr-(@marginMax);
+
+.mr-(@n, @i: 0) when (@i =< @n) {
+    .mr-@{i} {
+        margin-right: 0rpx + @i  !important;
+    }
+
+    .mr-(@n, (@i+@marginStep));
+}
+
+// marign-bottom
+.mb-(@marginMax);
+
+.mb-(@n, @i: 0) when (@i =< @n) {
+    .mb-@{i} {
+        margin-bottom: 0rpx + @i  !important;
+    }
+
+    .mb-(@n, (@i+@marginStep));
+}
+
+// margin X
+.mx-(@marginMax);
+
+.mx-(@n, @i: 0) when (@i =< @n) {
+    .mx-@{i} {
+        margin-left : 0rpx + @i  !important;
+        margin-right: 0rpx + @i  !important;
+    }
+
+    .mx-(@n, (@i+@marginStep));
+}
+
+// margin Y
+.my-(@marginMax);
+
+.my-(@n, @i: 0) when (@i =< @n) {
+    .my-@{i} {
+        margin-top   : 0rpx + @i  !important;
+        margin-bottom: 0rpx + @i  !important;
+    }
+
+    .my-(@n, (@i+@marginStep));
+}
+
+// margin center
+.m-center {
+    margin: auto !important;
+}
+
+.m-x-center {
+    margin-left : auto !important;
+    margin-right: auto !important;
+}
+
+.m-y-center {
+    margin-top   : auto !important;
+    margin-bottom: auto !important;
+}
+
+
+// padding 
+.p-(@marginMax);
+
+.p-(@n, @i: 0) when (@i =< @n) {
+    .p-@{i} {
+        padding: 0rpx + @i  !important;
+    }
+
+    .p-(@n, (@i+@marginStep));
+}
+
+// padding-left 
+.pt-(@marginMax);
+
+.pt-(@n, @i: 0) when (@i =< @n) {
+    .pt-@{i} {
+        padding-top: 0rpx + @i  !important;
+    }
+
+    .pt-(@n, (@i+@marginStep));
+}
+
+.pr-(@marginMax);
+
+.pr-(@n, @i: 0) when (@i =< @n) {
+    .pr-@{i} {
+        padding-right: 0rpx + @i  !important;
+    }
+
+    .pr-(@n, (@i+@marginStep));
+}
+
+//padding-bottom
+.pb-(@marginMax);
+
+.pb-(@n, @i: 0) when (@i =< @n) {
+    .pb-@{i} {
+        padding-bottom: 0rpx + @i  !important;
+    }
+
+    .pb-(@n, (@i+@marginStep));
+}
+
+//padding-left
+.pl-(@marginMax);
+
+.pl-(@n, @i: 0) when (@i =< @n) {
+    .pl-@{i} {
+        padding-left: 0rpx + @i  !important;
+    }
+
+    .pl-(@n, (@i+@marginStep));
+}
+
+// margin X
+.px-(@marginMax);
+
+.px-(@n, @i: 0) when (@i =< @n) {
+    .px-@{i} {
+        padding-left : 0rpx + @i  !important;
+        padding-right: 0rpx + @i  !important;
+    }
+
+    .px-(@n, (@i+@marginStep));
+}
+
+// margin Y
+.py-(@marginMax);
+
+.py-(@n, @i: 0) when (@i =< @n) {
+    .py-@{i} {
+        padding-top   : 0rpx + @i  !important;
+        padding-bottom: 0rpx + @i  !important;
+    }
+
+    .py-(@n, (@i+@marginStep));
+}
+
+.w-0 {
+    width: 0 !important;
+}
+
+.h-0 {
+    height: 0 !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.w-100vw {
+    width: 100vw !important;
+}
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+.w-auto {
+    width: auto !important;
+}
+
+.h-auto {
+    height: auto !important;
+}
+
+.w-fit {
+    width: fit-content !important;
+}
+
+.h-fit {
+    height: fit-content !important;
+}
+
+.min-w-auto {
+    min-width: auto !important;
+}
+
+.max-w-auto {
+    max-width: auto !important;
+}
+
+.min-h-auto {
+    min-height: auto !important;
+}
+
+.max-h-auto {
+    max-height: auto !important;
+}

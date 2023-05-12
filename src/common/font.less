@@ -1,0 +1,56 @@
+@sizeMax : 80; //最大上限
+@sizeStep: 4; //渐变值
+
+// font 
+.text-(@sizeMax);
+
+.text-(@n, @i: 0) when (@i =< @n) {
+    .text-@{i} {
+        font-size: 0rpx + @i  !important;
+    }
+
+    .text-(@n, (@i+@sizeStep));
+}
+
+
+@radiusMax : 40; //最大上限
+@radiusStep: 4; //渐变值
+
+// radius 
+.radius-(@radiusMax);
+
+.radius-(@n, @i: 0) when (@i =< @n) {
+    .radius-@{i} {
+        border-radius: 0rpx + @i  !important;
+    }
+
+    .radius-(@n, (@i+@radiusStep));
+}
+
+.radius-round {
+    border-radius: 999em !important;
+}
+
+.radius-circle {
+    border-radius: 100% !important;
+}
+
+.font-light {
+    font-weight: 200;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-bolder {
+    font-weight: 900;
+}
