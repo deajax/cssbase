@@ -1,6 +1,6 @@
 {
   "name": "cssbase",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "cssbase",
   "main": "index.js",
   "scripts": {
