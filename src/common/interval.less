@@ -12,7 +12,7 @@
     .m-(@n, (@i+@marginStep));
 }
 
-// margin-left 
+// margin-top 
 .mt-(@marginMax);
 
 .mt-(@n, @i: 0) when (@i =< @n) {
@@ -43,6 +43,17 @@
     }
 
     .mb-(@n, (@i+@marginStep));
+}
+
+// margin-left 
+.ml-(@marginMax);
+
+.ml-(@n, @i: 0) when (@i =< @n) {
+    .ml-@{i} {
+        margin-left: 0rpx + @i  !important;
+    }
+
+    .ml-(@n, (@i+@marginStep));
 }
 
 // margin X
