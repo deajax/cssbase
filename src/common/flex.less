@@ -164,6 +164,23 @@
     align-self: flex-end !important;
 }
 
+@sizeMax : 80; //最大上限
+@sizeStep: 4; //渐变值
+
+// gap 
+.gap-(@sizeMax);
+
+.gap-(@n, @i: 0) when (@i =< @n) {
+    .row-gap-@{i} {
+        row-gap: 0rpx + @i  !important;
+    }
+    .column-gap-@{i} {
+        column-gap: 0rpx + @i  !important;
+    }
+
+    .gap-(@n, (@i+@sizeStep));
+}
+
 .line-clamp-1 {
     overflow     : hidden !important;
     text-overflow: ellipsis !important;
